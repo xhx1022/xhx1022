@@ -1,0 +1,925 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/hx.jpg">
+  <link rel="icon" href="/img/hx.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="xhx">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="3. 顺序目录3.1 数据结构 数组 1：LCR 120. 寻找文件副本 - 力扣（LeetCode）   12345678910111213141516171819class Solution &#123;public:    int findRepeatDocument(vector&lt;int&gt;&amp; documents) &#123;        &#x2F;&#x2F; 数组元素的 索引 和">
+<meta property="og:type" content="article">
+<meta property="og:title" content="力扣专题目录">
+<meta property="og:url" content="https://xhx1022.github.io/2023/12/10/%E5%8A%9B%E6%89%A3%E4%B8%93%E9%A2%98%E7%9B%AE%E5%BD%95/index.html">
+<meta property="og:site_name" content="HX&#39;s Blog">
+<meta property="og:description" content="3. 顺序目录3.1 数据结构 数组 1：LCR 120. 寻找文件副本 - 力扣（LeetCode）   12345678910111213141516171819class Solution &#123;public:    int findRepeatDocument(vector&lt;int&gt;&amp; documents) &#123;        &#x2F;&#x2F; 数组元素的 索引 和">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xhx1022.github.io/%E5%8A%9B%E6%89%A3%E4%B8%93%E9%A2%98%E7%9B%AE%E5%BD%95%206880bbd68ebd4042b7a194d1a1056e7a/Untitled.png">
+<meta property="article:published_time" content="2023-12-10T14:57:37.292Z">
+<meta property="article:modified_time" content="2023-12-10T14:58:03.958Z">
+<meta property="article:author" content="xhx">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://xhx1022.github.io/%E5%8A%9B%E6%89%A3%E4%B8%93%E9%A2%98%E7%9B%AE%E5%BD%95%206880bbd68ebd4042b7a194d1a1056e7a/Untitled.png">
+  
+  
+  
+  <title>力扣专题目录 - HX&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"xhx1022.github.io","root":"/","version":"1.9.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>HX&#39;Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/dog.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="力扣专题目录"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-12-10 22:57" pubdate>
+          2023年12月10日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          23 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">力扣专题目录</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="3-顺序目录"><a href="#3-顺序目录" class="headerlink" title="3. 顺序目录"></a><strong>3. 顺序目录</strong></h2><h3 id="3-1-数据结构"><a href="#3-1-数据结构" class="headerlink" title="3.1 数据结构"></a><strong>3.1 数据结构</strong></h3><ul>
+<li><p>数组 1：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/">LCR 120. 寻找文件副本 - 力扣（LeetCode）</a></p>
+  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">findRepeatDocument</span><span class="hljs-params">(vector&lt;<span class="hljs-type">int</span>&gt;&amp; documents)</span> </span>&#123;<br>        <span class="hljs-comment">// 数组元素的 索引 和 值 是一对多的关系。</span><br>        <span class="hljs-type">int</span> i = <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> n = documents.<span class="hljs-built_in">size</span>();<br>        <span class="hljs-keyword">while</span>(i&lt;n)&#123; <span class="hljs-comment">// 千万不能用for，因为不是每次i都有增加</span><br>            <span class="hljs-keyword">if</span>(documents[i]==i)&#123;<br>                i++;<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br>            <span class="hljs-keyword">if</span>(documents[documents[i]]==documents[i])&#123;<br>                <span class="hljs-keyword">return</span> documents[i];<br>            &#125;<br>            <span class="hljs-built_in">swap</span>(documents[documents[i]],documents[i]);<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<p>  复杂度分析：<br>  时间复杂度 O(N) ： 遍历数组使用 O(N)，每轮遍历的判断和交换操作使用 O(1)。<br>  空间复杂度 O(1)： 使用常数复杂度的额外空间。</p>
+</li>
+<li><p>数组 2：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/">LCR 121. 寻找目标值 - 二维数组 - 力扣（LeetCode）</a> √</p>
+  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">bool</span> <span class="hljs-title">findTargetIn2DPlants</span><span class="hljs-params">(vector&lt;vector&lt;<span class="hljs-type">int</span>&gt;&gt;&amp; plants, <span class="hljs-type">int</span> target)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span>(plants.<span class="hljs-built_in">empty</span>())&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        &#125;<br>        <span class="hljs-type">int</span> col = plants.<span class="hljs-built_in">size</span>(),row = plants[<span class="hljs-number">0</span>].<span class="hljs-built_in">size</span>();<br>        <span class="hljs-type">int</span> i=<span class="hljs-number">0</span>,j=row<span class="hljs-number">-1</span>;<br>        <span class="hljs-keyword">while</span>(i&lt;col &amp;&amp; j&gt;=<span class="hljs-number">0</span>)&#123;<br>            <span class="hljs-keyword">if</span>(plants[i][j]==target)&#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(plants[i][j]&gt;target)&#123;<br>                j--;<br>            &#125;<br>            <span class="hljs-keyword">else</span>&#123;<br>                i++;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<p>  时间复杂度 O(M+N)：其中，N 和 M 分别为矩阵行数和列数，此算法最多循环 M+N次。<br>  空间复杂度 O(1) : i, j 指针使用常数大小额外空间。</p>
+</li>
+<li><p>字符串：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/ti-huan-kong-ge-lcof/">LCR 122. 路径加密 - 力扣（LeetCode）</a> √</p>
+  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">string <span class="hljs-title">pathEncryption</span><span class="hljs-params">(string path)</span> </span>&#123;<br>        string array;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> &amp;c:path)&#123;<br>            <span class="hljs-keyword">if</span>(c==<span class="hljs-string">&#x27;.&#x27;</span>)&#123;<br>                array.<span class="hljs-built_in">push_back</span>(<span class="hljs-string">&#x27; &#x27;</span>);<br>            &#125;<br>            <span class="hljs-keyword">else</span> array.<span class="hljs-built_in">push_back</span>(c);<br>        &#125;<br>        <span class="hljs-keyword">return</span> array;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>链表：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">LCR 123. 图书整理 I - 力扣（LeetCode）</a> √</p>
+  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function">vector&lt;<span class="hljs-type">int</span>&gt; <span class="hljs-title">reverseBookList</span><span class="hljs-params">(ListNode* head)</span> </span>&#123;<br>        stack&lt;<span class="hljs-type">int</span>&gt; stk;<br>        <span class="hljs-keyword">while</span>(head)&#123;<br>            stk.<span class="hljs-built_in">push</span>(head-&gt;val);<br>            head=head-&gt;next;<br>        &#125;<br>        vector&lt;<span class="hljs-type">int</span>&gt; vec;<br>        <span class="hljs-keyword">while</span>(!stk.<span class="hljs-built_in">empty</span>())&#123;<br>            vec.<span class="hljs-built_in">push_back</span>(stk.<span class="hljs-built_in">top</span>());<br>            stk.<span class="hljs-built_in">pop</span>();<br>        &#125;<br>        <span class="hljs-keyword">return</span> vec;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>树：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/zhong-jian-er-cha-shu-lcof/">LCR 124. 推理二叉树 - 力扣（LeetCode）</a></p>
+  <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-attr">public</span>:<br>    <span class="hljs-title class_">TreeNode</span>* <span class="hljs-title function_">deduceTree</span>(<span class="hljs-params">vector&lt;int&gt;&amp; preorder, vector&lt;int&gt;&amp; inorder</span>) &#123;<br>        <span class="hljs-variable language_">this</span>-&gt;preorder = preorder;<br>        <span class="hljs-keyword">for</span>(int i=<span class="hljs-number">0</span>;i&lt;inorder.<span class="hljs-title function_">size</span>();i++)&#123;<br>            hmap[inorder[i]]=i;<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-title function_">recur</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,inorder.<span class="hljs-title function_">size</span>()-<span class="hljs-number">1</span>);<br>    &#125;<br><span class="hljs-attr">private</span>:<br>    vector&lt;int&gt; preorder;<br>    unordered_map&lt;int,int&gt; hmap;<br>    <span class="hljs-title class_">TreeNode</span>* <span class="hljs-title function_">recur</span>(<span class="hljs-params">int root,int left,int right</span>)&#123;<br>        <span class="hljs-keyword">if</span>(left&gt;right)&#123;<br>            <span class="hljs-keyword">return</span> nullptr;<br>        &#125;<br>        <span class="hljs-title class_">TreeNode</span>* node =<span class="hljs-keyword">new</span> <span class="hljs-title class_">TreeNode</span>(preorder[root]);<br>        int i = hmap[preorder[root]];<br>        node-&gt;left = <span class="hljs-title function_">recur</span>(root+<span class="hljs-number">1</span>,left,i-<span class="hljs-number">1</span>);<br>        node-&gt;right = <span class="hljs-title function_">recur</span>(root+i-left+<span class="hljs-number">1</span>,i+<span class="hljs-number">1</span>,right);<br>        <span class="hljs-keyword">return</span> node;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>栈和队列：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/">LCR 125. 图书整理 II - 力扣（LeetCode）</a></p>
+  <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CQueue</span> &#123;<br><span class="hljs-attr">public</span>:<br>    stack&lt;int&gt; A,B;<br>    <span class="hljs-title class_">CQueue</span>() &#123;<br><br>    &#125;<br>    <br>    <span class="hljs-keyword">void</span> <span class="hljs-title function_">appendTail</span>(<span class="hljs-params">int value</span>) &#123;<br>        A.<span class="hljs-title function_">push</span>(value);<br>    &#125;<br>    <br>    int <span class="hljs-title function_">deleteHead</span>(<span class="hljs-params"></span>) &#123;<br>        <span class="hljs-keyword">if</span>(!B.<span class="hljs-title function_">empty</span>())&#123;<br>            int res = B.<span class="hljs-title function_">top</span>();<br>            B.<span class="hljs-title function_">pop</span>();<br>            <span class="hljs-keyword">return</span> res;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(A.<span class="hljs-title function_">empty</span>())&#123;<br>            <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;<br>        &#125;<br>        <span class="hljs-keyword">while</span>(!A.<span class="hljs-title function_">empty</span>())&#123;<br>            int tmp = A.<span class="hljs-title function_">top</span>();<br>            A.<span class="hljs-title function_">pop</span>();<br>            B.<span class="hljs-title function_">push</span>(tmp);<br>        &#125;<br>        int res = B.<span class="hljs-title function_">top</span>();<br>        B.<span class="hljs-title function_">pop</span>();<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="3-2-算法和数据操作"><a href="#3-2-算法和数据操作" class="headerlink" title="3.2 算法和数据操作"></a><strong>3.2 算法和数据操作</strong></h3><ul>
+<li><p>递归和循环：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/description/">LCR 126. 斐波那契数 - 力扣（LeetCode）</a> √</p>
+  <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-attr">public</span>:<br>    int <span class="hljs-title function_">fib</span>(<span class="hljs-params">int n</span>) &#123;<br>        <span class="hljs-keyword">if</span>(n==<span class="hljs-number">0</span> || n==<span class="hljs-number">1</span>)<br>            <span class="hljs-keyword">return</span> n;<br>        int pre=<span class="hljs-number">0</span>,now=<span class="hljs-number">1</span>;<br>        int tmp;<br>        <span class="hljs-keyword">for</span>(int i=<span class="hljs-number">2</span>;i&lt;=n;i++)&#123;<br>            tmp = (pre+now)%<span class="hljs-number">1000000007</span>;<br>            pre = now;<br>            now = tmp;<br>        &#125;<br>        <span class="hljs-keyword">return</span> now;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>查找和排序：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/">LCR 128. 库存管理 I - 力扣（LeetCode）</a></p>
+  <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-attr">public</span>:<br>    int <span class="hljs-title function_">stockManagement</span>(<span class="hljs-params">vector&lt;int&gt;&amp; stock</span>) &#123;<br>        int left = <span class="hljs-number">0</span>;<br>        int right = stock.<span class="hljs-title function_">size</span>()-<span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">while</span>(left &lt; right)&#123; <span class="hljs-comment">//注意</span><br>            int mid = left + (right-left)/<span class="hljs-number">2</span>;<br>            <span class="hljs-keyword">if</span>(stock[mid]&gt;stock[right])&#123;<br>                left = mid+<span class="hljs-number">1</span>;<br>            &#125;<br>            <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(stock[mid]&lt;stock[left])&#123;<br>                right = mid;<br>            &#125;<br>            <span class="hljs-keyword">else</span>&#123;<br>                right--; <span class="hljs-comment">// 注意</span><br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> stock[left]; <span class="hljs-comment">// left==right</span><br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>回溯法1 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/ju-zhen-zhong-de-lu-jing-lcof/">LCR 129. 字母迷宫 - 力扣（LeetCode）</a></p>
+  <figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br><span class="hljs-attr">public</span>:<br>    bool <span class="hljs-title function_">wordPuzzle</span>(<span class="hljs-params">vector&lt;vector&lt;char&gt;&gt;&amp; grid, string target</span>) &#123;<br>        <span class="hljs-keyword">if</span>(grid.<span class="hljs-title function_">empty</span>())&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        &#125;<br>        rows = grid.<span class="hljs-title function_">size</span>();<br>        cols = grid[<span class="hljs-number">0</span>].<span class="hljs-title function_">size</span>();<br>        <span class="hljs-keyword">for</span>(int i=<span class="hljs-number">0</span>;i&lt;rows;i++)&#123;<br>            <span class="hljs-keyword">for</span>(int j=<span class="hljs-number">0</span>;j&lt;cols;j++)&#123;<br>                <span class="hljs-keyword">if</span>(<span class="hljs-title function_">dfs</span>(grid,target,i,j,<span class="hljs-number">0</span>))&#123;<br>                    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>    &#125;<br><span class="hljs-attr">private</span>:<br>    int rows,cols;<br>    bool <span class="hljs-title function_">dfs</span>(<span class="hljs-params">vector&lt;vector&lt;char&gt;&gt;&amp; grid,string&amp; target,int i,int j,int k</span>)&#123;<br>        <span class="hljs-keyword">if</span>(i&gt;=rows || i&lt;<span class="hljs-number">0</span> || j&gt;=cols || j&lt;<span class="hljs-number">0</span> || target[k]!=grid[i][j])&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(k==target.<span class="hljs-title function_">size</span>()-<span class="hljs-number">1</span>)&#123; <span class="hljs-comment">//注意-1</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>        &#125;<br>        grid[i][j]=<span class="hljs-string">&#x27;\0&#x27;</span>; <span class="hljs-comment">//注意，防止重复visit</span><br>        bool res = <span class="hljs-title function_">dfs</span>(grid,target,i+<span class="hljs-number">1</span>,j,k+<span class="hljs-number">1</span>)<br>                || <span class="hljs-title function_">dfs</span>(grid,target,i-<span class="hljs-number">1</span>,j,k+<span class="hljs-number">1</span>)<br>                || <span class="hljs-title function_">dfs</span>(grid,target,i,j+<span class="hljs-number">1</span>,k+<span class="hljs-number">1</span>)<br>                || <span class="hljs-title function_">dfs</span>(grid,target,i,j-<span class="hljs-number">1</span>,k+<span class="hljs-number">1</span>);<br>        grid[i][j]=target[k];<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<p>  <img src="/%E5%8A%9B%E6%89%A3%E4%B8%93%E9%A2%98%E7%9B%AE%E5%BD%95%206880bbd68ebd4042b7a194d1a1056e7a/Untitled.png" srcset="/img/loading.gif" lazyload alt="Untitled"></p>
+</li>
+<li><p>回溯法2 ：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/description/">LCR 130. 衣橱整理 - 力扣（LeetCode）</a></p>
+  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-type">int</span> x)</span></span>&#123;<br>        <span class="hljs-type">int</span> res = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(;x;x /= <span class="hljs-number">10</span>)&#123;<br>            res += x%<span class="hljs-number">10</span>;<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">wardrobeFinishing</span><span class="hljs-params">(<span class="hljs-type">int</span> m, <span class="hljs-type">int</span> n, <span class="hljs-type">int</span> cnt)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span>(!cnt)&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>        &#125;<br>        vector&lt;vector&lt;<span class="hljs-type">bool</span>&gt;&gt; <span class="hljs-built_in">vis</span>(m,<span class="hljs-built_in">vector</span>&lt;<span class="hljs-type">bool</span>&gt;(n,<span class="hljs-literal">false</span>));<br>        <span class="hljs-type">int</span> ans = <span class="hljs-number">1</span>;<br>        queue&lt;pair&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt;&gt; Q;<br>        Q.<span class="hljs-built_in">push</span>(<span class="hljs-built_in">make_pair</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>));<br>        <span class="hljs-type">int</span> dx[<span class="hljs-number">2</span>]=&#123;<span class="hljs-number">0</span>,<span class="hljs-number">1</span>&#125;;<br>        <span class="hljs-type">int</span> dy[<span class="hljs-number">2</span>]=&#123;<span class="hljs-number">1</span>,<span class="hljs-number">0</span>&#125;;<br>        <span class="hljs-keyword">while</span>(!Q.<span class="hljs-built_in">empty</span>())&#123;<br>            <span class="hljs-keyword">auto</span> [x,y]=Q.<span class="hljs-built_in">front</span>();<br>            Q.<span class="hljs-built_in">pop</span>();<br>            <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">2</span>;i++)&#123;<br>                <span class="hljs-type">int</span> tx = x+dx[i];<br>                <span class="hljs-type">int</span> ty = y+dy[i];<br>                <span class="hljs-keyword">if</span>(tx&gt;=m || ty&gt;=n || vis[tx][ty])&#123;<br>                    <span class="hljs-keyword">continue</span>;<br>                &#125;<br>                vis[tx][ty]=<span class="hljs-literal">true</span>;<br>                <span class="hljs-keyword">if</span>(<span class="hljs-built_in">get</span>(tx)+<span class="hljs-built_in">get</span>(ty)&lt;=cnt)&#123;<br>                    ans++;<br>                    Q.<span class="hljs-built_in">push</span>(<span class="hljs-built_in">make_pair</span>(tx,ty));<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>动态规划与贪婪算法：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/jian-sheng-zi-lcof/">LCR 131. 砍竹子 I - 力扣（LeetCode）</a></p>
+  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cpp">    <br></code></pre></td></tr></table></figure>
+</li>
+<li><p>位运算：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108027246">LeetCode By Python: 191. 剑指Offer第2版 15. 二进制中1的个数</a></p>
+</li>
+</ul>
+<h3 id="3-3-代码的完整性"><a href="#3-3-代码的完整性" class="headerlink" title="3.3 代码的完整性"></a><strong>3.3 代码的完整性</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108036955">LeetCode By Python: 50. 剑指Offer第2版 16. 数值的整数次方</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108250395">LeetCode By Python: 剑指Offer第2版 17. 打印从1到最大的n位数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108259237">LeetCode By Python: 剑指Offer第2版 18. 删除链表的节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108487705">LeetCode By Python: 10. 剑指Offer第2版 19. 正则表达式匹配</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108496387">LeetCode By Python: 65. 剑指Offer第2版 20. 有效数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108633648">LeetCode By Python: 剑指Offer第2版 21. 调整数组顺序使奇数位于偶数前面</a></li>
+</ul>
+<h3 id="3-4-代码的鲁棒性"><a href="#3-4-代码的鲁棒性" class="headerlink" title="3.4 代码的鲁棒性"></a><strong>3.4 代码的鲁棒性</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108638648">LeetCode By Python: 剑指Offer第2版 22. 链表中倒数第k个字节</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108773653">LeetCode By Python: 206. 剑指Offer第2版 24. 反转链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108774594">LeetCode By Python: 21. 剑指Offer第2版25. 合并两个排序的链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109000704">LeetCode By Python: 剑指Offer第2版 26. 树的子结构</a></li>
+</ul>
+<h3 id="3-5-画图让抽象问题具体化"><a href="#3-5-画图让抽象问题具体化" class="headerlink" title="3.5 画图让抽象问题具体化"></a><strong>3.5 画图让抽象问题具体化</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109001549">LeetCode By Python: 226. 剑指Offer第2版 27. 二叉树的镜像</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109221133">LeetCode By Python: 101. 剑指Offer第2版 28. 对称的二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109220931">LeetCode By Python: 54. 剑指Offer第2版29. 顺时针打印矩阵</a></li>
+</ul>
+<h3 id="3-6-举例让抽象问题具体化"><a href="#3-6-举例让抽象问题具体化" class="headerlink" title="3.6 举例让抽象问题具体化"></a><strong>3.6 举例让抽象问题具体化</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109438358">LeetCode By Python: 155. 剑指Offer第2版 30. 包含min函数的栈</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109439089">LeetCode By Python: 946. 剑指Offer第2版 31. 栈的压入、弹出序列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109776925">LeetCode By Python: 剑指Offer第2版 32-1. 从上到下打印二叉树 1</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109778477">LeetCode By Python: 102. 剑指Offer第2版 32-2. 从上到下打二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109779565">LeetCode By Python: 剑指Offer第2版 32-3. 从上到下打印二叉树 3</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109781322">LeetCode By Python: 剑指Offer第2版33. 二叉搜索树的后序遍历序列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109973129">LeetCode By Python: 113. 剑指Offer第2版 34. 二叉树中和为某值路径</a></li>
+</ul>
+<h3 id="3-7-分解让复杂问题简单化"><a href="#3-7-分解让复杂问题简单化" class="headerlink" title="3.7 分解让复杂问题简单化"></a><strong>3.7 分解让复杂问题简单化</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109984867">LeetCode By Python: 138. 剑指Offer第2版 35. 复杂链表的复制</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110093284">LeetCode By Python: 426. 剑指Offer第2版36. 二叉搜索树与双向链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110111433">LeetCode By Python: 279. 剑指Offer第2版 37. 序列化二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110423447">LeetCode By Python: 剑指Offer第2版 38. 字符串的排列</a></li>
+</ul>
+<h3 id="3-8-优化时间效率"><a href="#3-8-优化时间效率" class="headerlink" title="3.8 优化时间效率"></a><strong>3.8 优化时间效率</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110424463">LeetCode By Python: 169. 剑指Offer第2版 39. 多数元素</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110671228">LeetCode By Python: 剑指Offer第2版 40. 最小的k个数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110672118">LeetCode By Python: 295. 剑指Offer第2版 41. 数据流中的中位数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110826760">LeetCode By Python: 53. 剑指Offer第2版 42. 连续子数组的最大和</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110861926">LeetCode By Python: 233. 剑指Offer第2版 43. 1出现的次数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111211471">LeetCode By Python: 400. 剑指Offer第2版 44. 第N个数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111213910">LeetCode By Python: 剑指Offer第2版 45. 把数组排成最小的数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111304745">LeetCode By Python: 剑指Offer 46. 把数字翻译成字符串</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111317881">LeetCode By Python: 剑指Offer 47. 礼物的最大价值</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111589808">LeetCode By Python: 3. 剑指Offer第2版 48. 最长不重复的子字符串</a></li>
+</ul>
+<h3 id="3-9-时间效率与空间效率的平衡"><a href="#3-9-时间效率与空间效率的平衡" class="headerlink" title="3.9 时间效率与空间效率的平衡"></a><strong>3.9 时间效率与空间效率的平衡</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111596193">LeetCode By Python: 264. 剑指Offer第2版 49. 丑数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111687647">LeetCode By Python: 剑指Offer第2版 50. 第一个只出现一次的字符</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111699117">LeetCode By Python: 剑指Offer第2版 51. 数组中的逆序对</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111890227">LeetCode By Python: 剑指Offer第2版 52. 两个链表的第一个公共节点</a></li>
+</ul>
+<h3 id="3-10-知识迁移能力"><a href="#3-10-知识迁移能力" class="headerlink" title="3.10 知识迁移能力"></a><strong>3.10 知识迁移能力</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111908229">LeetCode By Python: 34. 剑指Offer第2版 53-1. 两链表的公共节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111929694">LeetCode By Python: 剑指Offer第2版 53-2. 0～n-1中缺失的数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112143946">LeetCode By Python: 剑指Offer第2版 54. 二叉搜索树的第k大节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112152142">LeetCode By Python: 104. 剑指Offer第2版 55-1. 二叉树的深度</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112153121">LeetCode By Python: 110. 剑指Offer第2版 55-2. 平衡二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112394937">LeetCode By Python: 260. 剑指Offer第2版 56-1. 数出现次数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112396508">LeetCode By Python: 137. 剑指Offer第2版 56-2. 数出现次数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112427134">LeetCode By Python: 剑指Offer第2版 57-1. 和为s的两个数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112428742">LeetCode By Python: 剑指Offer第2版 57-2. 和为s的连续正数序列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112637405">LeetCode By Python: 151. 剑指Offer第2版 58-1. 翻转单词顺序</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112641218">LeetCode By Python: 剑指Offer第2版 58-2. 左旋转字符串</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112678951">LeetCode By Python: 239. 剑指Offer第2版 59-1. 滑动窗口的最大值</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112681950">LeetCode By Python: 剑指Offer第2版 59-2. 队列的最大值</a></li>
+</ul>
+<h3 id="3-11-抽象建模能力"><a href="#3-11-抽象建模能力" class="headerlink" title="3.11 抽象建模能力"></a><strong>3.11 抽象建模能力</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112930632">LeetCode By Python: 剑指Offer第2版 60. n个骰子的点数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112954799">LeetCode By Python: 剑指Offer第2版 61. 队列的最大值</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112987575">LeetCode By Python: 剑指Offer第2版 62. 圆圈中最后剩下的数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113167059">LeetCode By Python: 剑指Offer第2版 63. 股票的最大利润</a></li>
+</ul>
+<h3 id="3-12-发散思维能力"><a href="#3-12-发散思维能力" class="headerlink" title="3.12 发散思维能力"></a><strong>3.12 发散思维能力</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113167922">LeetCode By Python: 剑指Offer第2版 64. 求1+2+…+n</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113179997">LeetCode By Python: 剑指Offer第2版 65. 不用加减乘除做加法</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113222960">LeetCode By Python: 剑指Offer第2版 66. 构建乘积数组</a></li>
+</ul>
+<h3 id="3-13-面试案例"><a href="#3-13-面试案例" class="headerlink" title="3.13 面试案例"></a><strong>3.13 面试案例</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113240621">LeetCode By Python: 剑指Offer第2版 67. 把字符串转换成整数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113294447">LeetCode By Python: 235. 剑指Offer第2版68-1. 二叉搜索树最近公共祖先</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113297122">LeetCode By Python 236: 剑指Offer第2版 68-2. 二叉树最近公共祖先</a></li>
+</ul>
+<h2 id="4-数据结构目录"><a href="#4-数据结构目录" class="headerlink" title="4. 数据结构目录"></a><strong>4. 数据结构目录</strong></h2><h3 id="4-1-数组"><a href="#4-1-数组" class="headerlink" title="4.1 数组"></a><strong>4.1 数组</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/106869409">LeetCode By Python: 剑指Offer第2版 3. 数组中重复的数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/106942250">LeetCode By Python: 240. 剑指Offer第2版 4. 二维数组中的查找</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107645112">LeetCode By Python: 154. 剑指Offer第2版 11. 旋转数组的最小数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108633648">LeetCode By Python: 剑指Offer第2版 21. 调整数组顺序使奇数位于偶数前面</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110671228">LeetCode By Python: 剑指Offer第2版 40. 最小的k个数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110672118">LeetCode By Python: 295. 剑指Offer第2版 41. 数据流中的中位数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110826760">LeetCode By Python: 53. 剑指Offer第2版 42. 连续子数组的最大和</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111213910">LeetCode By Python: 剑指Offer第2版 45. 把数组排成最小的数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111699117">LeetCode By Python: 剑指Offer第2版 51. 数组中的逆序对</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111929694">LeetCode By Python: 剑指Offer第2版 53-2. 0～n-1中缺失的数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112394937">LeetCode By Python: 260. 剑指Offer第2版 56-1. 数出现次数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113222960">LeetCode By Python: 剑指Offer第2版 66. 构建乘积数组</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109220931">LeetCode By Python: 54. 剑指Offer第2版29. 顺时针打印矩阵</a></li>
+</ul>
+<h3 id="4-3-字符串"><a href="#4-3-字符串" class="headerlink" title="4.3 字符串"></a><strong>4.3 字符串</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107086718">LeetCode By Python: 剑指Offer第2版 5. 替换空格</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110423447">LeetCode By Python: 剑指Offer第2版 38. 字符串的排列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111304745">LeetCode By Python: 剑指Offer 46. 把数字翻译成字符串</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111589808">LeetCode By Python: 3. 剑指Offer第2版 48. 最长不重复的子字符串</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111687647">LeetCode By Python: 剑指Offer第2版 50. 第一个只出现一次的字符</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112637405">LeetCode By Python: 151. 剑指Offer第2版 58-1. 翻转单词顺序</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112641218">LeetCode By Python: 剑指Offer第2版 58-2. 左旋转字符串</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113240621">LeetCode By Python: 剑指Offer第2版 67. 把字符串转换成整数</a></li>
+</ul>
+<h3 id="4-4-链表"><a href="#4-4-链表" class="headerlink" title="4.4 链表"></a><strong>4.4 链表</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107098865">LeetCode By Python: 剑指Offer第2版 6. 从尾到头打印链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108259237">LeetCode By Python: 剑指Offer第2版 18. 删除链表的节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108638648">LeetCode By Python: 剑指Offer第2版 22. 链表中倒数第k个字节</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108773653">LeetCode By Python: 206. 剑指Offer第2版 24. 反转链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108774594">LeetCode By Python: 21. 剑指Offer第2版25. 合并两个排序的链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109984867">LeetCode By Python: 138. 剑指Offer第2版 35. 复杂链表的复制</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110093284">LeetCode By Python: 426. 剑指Offer第2版36. 二叉搜索树与双向链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111890227">LeetCode By Python: 剑指Offer第2版 52. 两个链表的第一个公共节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111908229">LeetCode By Python: 34. 剑指Offer第2版 53-1. 两链表的公共节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110672118">LeetCode By Python: 295. 剑指Offer第2版 41. 数据流中的中位数</a></li>
+<li><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/c32eOV/description/">LCR 022. 环形链表 II - 力扣（LeetCode）</a></li>
+</ul>
+<h3 id="4-5-树"><a href="#4-5-树" class="headerlink" title="4.5 树"></a><strong>4.5 树</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107265060">LeetCode By Python: 105. 剑指Offer第2版 7. 重建二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109000704">LeetCode By Python: 剑指Offer第2版 26. 树的子结构</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109001549">LeetCode By Python: 226. 剑指Offer第2版 27. 二叉树的镜像</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109221133">LeetCode By Python: 101. 剑指Offer第2版 28. 对称的二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109776925">LeetCode By Python: 剑指Offer第2版 32-1. 从上到下打印二叉树 1</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109778477">LeetCode By Python: 102. 剑指Offer第2版 32-2. 从上到下打二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109779565">LeetCode By Python: 剑指Offer第2版 32-3. 从上到下打印二叉树 3</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109781322">LeetCode By Python: 剑指Offer第2版33. 二叉搜索树的后序遍历序列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109973129">LeetCode By Python: 113. 剑指Offer第2版 34. 二叉树中和为某值路径</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110093284">LeetCode By Python: 426. 剑指Offer第2版36. 二叉搜索树与双向链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110111433">LeetCode By Python: 279. 剑指Offer第2版 37. 序列化二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112143946">LeetCode By Python: 剑指Offer第2版 54. 二叉搜索树的第k大节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112152142">LeetCode By Python: 104. 剑指Offer第2版 55-1. 二叉树的深度</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112153121">LeetCode By Python: 110. 剑指Offer第2版 55-2. 平衡二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110672118">LeetCode By Python: 295. 剑指Offer第2版 41. 数据流中的中位数</a></li>
+<li>树的很多算法，离不开递归。</li>
+</ul>
+<h3 id="4-6-栈、队列、堆"><a href="#4-6-栈、队列、堆" class="headerlink" title="4.6 栈、队列、堆"></a><strong>4.6 栈、队列、堆</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107272266">LeetCode By Python: 剑指Offer第2版 9. 用两个栈实现队列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107098865">LeetCode By Python: 剑指Offer第2版 6. 从尾到头打印链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109438358">LeetCode By Python: 155. 剑指Offer第2版 30. 包含min函数的栈</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109439089">LeetCode By Python: 946. 剑指Offer第2版 31. 栈的压入、弹出序列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112637405">LeetCode By Python: 151. 剑指Offer第2版 58-1. 翻转单词顺序</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112681950">LeetCode By Python: 剑指Offer第2版 59-2. 队列的最大值</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112954799">LeetCode By Python: 剑指Offer第2版 61. 队列的最大值</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110671228">LeetCode By Python: 剑指Offer第2版 40. 最小的k个数</a></li>
+</ul>
+<h3 id="4-7-哈希表"><a href="#4-7-哈希表" class="headerlink" title="4.7 哈希表"></a><strong>4.7 哈希表</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/106869409">LeetCode By Python: 剑指Offer第2版 3. 数组中重复的数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110424463">LeetCode By Python: 169. 剑指Offer第2版 39. 多数元素</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111687647">LeetCode By Python: 剑指Offer第2版 50. 第一个只出现一次的字符</a></li>
+</ul>
+<h2 id="5-算法目录"><a href="#5-算法目录" class="headerlink" title="5 算法目录"></a><strong>5 算法目录</strong></h2><h3 id="5-1-查找、排序算法"><a href="#5-1-查找、排序算法" class="headerlink" title="5.1 查找、排序算法"></a><strong>5.1 查找、排序算法</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/106942250">LeetCode By Python: 240. 剑指Offer第2版 4. 二维数组中的查找</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107645112">LeetCode By Python: 154. 剑指Offer第2版 11. 旋转数组的最小数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108633648">LeetCode By Python: 剑指Offer第2版 21. 调整数组顺序使奇数位于偶数前面</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109220931">LeetCode By Python: 54. 剑指Offer第2版29. 顺时针打印矩阵</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110424463">LeetCode By Python: 169. 剑指Offer第2版 39. 多数元素</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110671228">LeetCode By Python: 剑指Offer第2版 40. 最小的k个数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110672118">LeetCode By Python: 295. 剑指Offer第2版 41. 数据流中的中位数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111699117">LeetCode By Python: 剑指Offer第2版 51. 数组中的逆序对</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112394937">LeetCode By Python: 260. 剑指Offer第2版 56-1. 数出现次数</a></li>
+</ul>
+<h3 id="5-2-递归"><a href="#5-2-递归" class="headerlink" title="5.2 递归"></a><strong>5.2 递归</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107380878">LeetCode By Python: 509. 70. 剑指Offer第2版 10. 斐波那契数列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107098865">LeetCode By Python: 剑指Offer第2版 6. 从尾到头打印链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107265060">LeetCode By Python: 105. 剑指Offer第2版 7. 重建二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108036955">LeetCode By Python: 50. 剑指Offer第2版 16. 数值的整数次方</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108487705">LeetCode By Python: 10. 剑指Offer第2版 19. 正则表达式匹配</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108774594">LeetCode By Python: 21. 剑指Offer第2版25. 合并两个排序的链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109000704">LeetCode By Python: 剑指Offer第2版 26. 树的子结构</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109001549">LeetCode By Python: 226. 剑指Offer第2版 27. 二叉树的镜像</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109221133">LeetCode By Python: 101. 剑指Offer第2版 28. 对称的二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110423447">LeetCode By Python: 剑指Offer第2版 38. 字符串的排列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110111433">LeetCode By Python: 279. 剑指Offer第2版 37. 序列化二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111304745">LeetCode By Python: 剑指Offer 46. 把数字翻译成字符串</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111317881">LeetCode By Python: 剑指Offer 47. 礼物的最大价值</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111908229">LeetCode By Python: 34. 剑指Offer第2版 53-1. 两链表的公共节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112152142">LeetCode By Python: 104. 剑指Offer第2版 55-1. 二叉树的深度</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113167922">LeetCode By Python: 剑指Offer第2版 64. 求1+2+…+n</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113294447">LeetCode By Python: 235.剑指Offer第2版68-1.二叉搜索树最近公共祖先</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113297122">LeetCode By Python 236: 剑指Offer第2版 68-2. 二叉树最近公共祖先</a></li>
+</ul>
+<h3 id="5-3-回溯法"><a href="#5-3-回溯法" class="headerlink" title="5.3 回溯法"></a><strong>5.3 回溯法</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107659342">LeetCode By Python: 79. 剑指Offer第2版 12. 矩阵中的路径</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107899295">LeetCode By Python: 剑指Offer第2版 13. 机器人的运动范围</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109973129">LeetCode By Python: 113. 剑指Offer第2版 34. 二叉树中和为某值路径</a></li>
+</ul>
+<h3 id="5-4-动态规划与贪婪算法"><a href="#5-4-动态规划与贪婪算法" class="headerlink" title="5.4 动态规划与贪婪算法"></a><strong>5.4 动态规划与贪婪算法</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107904926">LeetCode By Python: 343. 剑指Offer第2版 14.1 &amp; 2. 剪绳子</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110826760">LeetCode By Python: 53. 剑指Offer第2版 42. 连续子数组的最大和</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111304745">LeetCode By Python: 剑指Offer 46. 把数字翻译成字符串</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111317881">LeetCode By Python: 剑指Offer 47. 礼物的最大价值</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112930632">LeetCode By Python: 剑指Offer第2版 60. n个骰子的点数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113167059">LeetCode By Python: 剑指Offer第2版 63. 股票的最大利润</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108487705">LeetCode By Python: 10. 剑指Offer第2版 19. 正则表达式匹配</a></li>
+</ul>
+<h3 id="5-5-深度遍历、广度遍历"><a href="#5-5-深度遍历、广度遍历" class="headerlink" title="5.5 深度遍历、广度遍历"></a><strong>5.5 深度遍历、广度遍历</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112153121">LeetCode By Python: 110. 剑指Offer第2版 55-2. 平衡二叉树</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113294447">LeetCode By Python: 235.剑指Offer第2版68-1.二叉搜索树最近公共祖先</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107659342">LeetCode By Python: 79. 剑指Offer第2版 12. 矩阵中的路径</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107899295">LeetCode By Python: 剑指Offer第2版 13. 机器人的运动范围</a></li>
+<li>许多二叉树和二维数组相关</li>
+</ul>
+<h3 id="5-6-位运算"><a href="#5-6-位运算" class="headerlink" title="5.6 位运算"></a><strong>5.6 位运算</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108027246">LeetCode By Python: 191. 剑指Offer第2版 15. 二进制中1的个数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112394937">LeetCode By Python: 260. 剑指Offer第2版 56-1. 数出现次数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112396508">LeetCode By Python: 137. 剑指Offer第2版 56-2. 数出现次数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113167922">LeetCode By Python: 剑指Offer第2版 64. 求1+2+…+n</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113179997">LeetCode By Python: 剑指Offer第2版 65. 不用加减乘除做加法</a></li>
+</ul>
+<h3 id="5-7-分治算法"><a href="#5-7-分治算法" class="headerlink" title="5.7 分治算法"></a><strong>5.7 分治算法</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110423447">LeetCode By Python: 剑指Offer第2版 38. 字符串的排列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111908229">LeetCode By Python: 34. 剑指Offer第2版 53-1. 两链表的公共节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111929694">LeetCode By Python: 剑指Offer第2版 53-2. 0～n-1中缺失的数</a></li>
+</ul>
+<h3 id="5-8-正则表达式"><a href="#5-8-正则表达式" class="headerlink" title="5.8 正则表达式"></a><strong>5.8 正则表达式</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108496387">LeetCode By Python: 65. 剑指Offer第2版 20. 有效数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113240621">LeetCode By Python: 剑指Offer第2版 67. 把字符串转换成整数</a></li>
+</ul>
+<h3 id="5-9-状态向量机"><a href="#5-9-状态向量机" class="headerlink" title="5.9 状态向量机"></a><strong>5.9 状态向量机</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108496387">LeetCode By Python: 65. 剑指Offer第2版 20. 有效数字</a></li>
+</ul>
+<h3 id="5-10-双指针"><a href="#5-10-双指针" class="headerlink" title="5.10 双指针"></a><strong>5.10 双指针</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108633648">LeetCode By Python: 剑指Offer第2版 21. 调整数组顺序使奇数位于偶数前面</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108638648">LeetCode By Python: 剑指Offer第2版 22. 链表中倒数第k个字节</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111890227">LeetCode By Python: 剑指Offer第2版 52. 两个链表的第一个公共节点</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112427134">LeetCode By Python: 剑指Offer第2版 57-1. 和为s的两个数字</a></li>
+</ul>
+<h3 id="5-11-滑动窗口"><a href="#5-11-滑动窗口" class="headerlink" title="5.11 滑动窗口"></a><strong>5.11 滑动窗口</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111589808">LeetCode By Python: 3. 剑指Offer第2版 48. 最长不重复的子字符串</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112428742">LeetCode By Python: 剑指Offer第2版 57-2. 和为s的连续正数序列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112678951">LeetCode By Python: 239. 剑指Offer第2版 59-1. 滑动窗口的最大值</a></li>
+</ul>
+<h3 id="5-12-辅助数据结构"><a href="#5-12-辅助数据结构" class="headerlink" title="5.12 辅助数据结构"></a><strong>5.12 辅助数据结构</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109438358">LeetCode By Python: 155. 剑指Offer第2版 30. 包含min函数的栈</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109439089">LeetCode By Python: 946. 剑指Offer第2版 31. 栈的压入、弹出序列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109779565">LeetCode By Python: 剑指Offer第2版 32-3. 从上到下打印二叉树 3</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109781322">LeetCode By Python: 剑指Offer第2版33. 二叉搜索树的后序遍历序列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113222960">LeetCode By Python: 剑指Offer第2版 66. 构建乘积数组</a></li>
+</ul>
+<h3 id="5-13-找规律"><a href="#5-13-找规律" class="headerlink" title="5.13 找规律"></a><strong>5.13 找规律</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110826760">LeetCode By Python: 53. 剑指Offer第2版 42. 连续子数组的最大和</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110861926">LeetCode By Python: 233. 剑指Offer第2版 43. 1出现的次数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111211471">LeetCode By Python: 400. 剑指Offer第2版 44. 第N个数字</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111213910">LeetCode By Python: 剑指Offer第2版 45. 把数组排成最小的数</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112954799">LeetCode By Python: 剑指Offer第2版 61. 队列的最大值</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112987575">LeetCode By Python: 剑指Offer第2版 62. 圆圈中最后剩下的数字</a></li>
+</ul>
+<h2 id="6-真题目录"><a href="#6-真题目录" class="headerlink" title="6. 真题目录"></a><strong>6. 真题目录</strong></h2><h3 id="6-1-阿里巴巴"><a href="#6-1-阿里巴巴" class="headerlink" title="6.1 阿里巴巴"></a><strong>6.1 阿里巴巴</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/112143946">LeetCode By Python: 剑指Offer第2版 54. 二叉搜索树的第k大节点</a> （题目为第k小）</li>
+</ul>
+<h3 id="6-2-百度"><a href="#6-2-百度" class="headerlink" title="6.2 百度"></a><strong>6.2 百度</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108774594">LeetCode By Python: 21. 剑指Offer第2版25. 合并两个排序的链表</a></li>
+</ul>
+<h3 id="6-3-腾讯"><a href="#6-3-腾讯" class="headerlink" title="6.3 腾讯"></a><strong>6.3 腾讯</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108773653">LeetCode By Python: 206. 剑指Offer第2版 24. 反转链表</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109973129">LeetCode By Python: 113. 剑指Offer第2版 34. 二叉树中和为某值路径</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/108036955">LeetCode By Python: 50. 剑指Offer第2版 16. 数值的整数次方</a></li>
+</ul>
+<h3 id="6-4-字节跳动"><a href="#6-4-字节跳动" class="headerlink" title="6.4 字节跳动"></a><strong>6.4 字节跳动</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/113297122">LeetCode By Python 236: 剑指Offer第2版 68-2. 二叉树最近公共祖先</a></li>
+</ul>
+<h3 id="6-5-京东"><a href="#6-5-京东" class="headerlink" title="6.5 京东"></a><strong>6.5 京东</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107380878">LeetCode By Python: 509. 70. 剑指Offer第2版 10. 斐波那契数列</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/107899295">LeetCode By Python: 剑指Offer第2版 13. 机器人的运动范围</a></li>
+</ul>
+<h3 id="6-6-快手"><a href="#6-6-快手" class="headerlink" title="6.6 快手"></a><strong>6.6 快手</strong></h3><ul>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/109984867">LeetCode By Python: 138. 剑指Offer第2版 35. 复杂链表的复制</a></li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>力扣专题目录</div>
+      <div>https://xhx1022.github.io/2023/12/10/力扣专题目录/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>xhx</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年12月10日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/12/10/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="如何搭建一篇博客">
+                        <span class="hidden-mobile">如何搭建一篇博客</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
