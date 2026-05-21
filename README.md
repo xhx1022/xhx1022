@@ -9,7 +9,7 @@
 
 ### Open Source Contributions
 
-- [vllm-project/vllm](https://github.com/vllm-project/vllm): [#28284](https://github.com/vllm-project/vllm/pull/28284) [#32306](https://github.com/vllm-project/vllm/pull/32306) [#35744](https://github.com/vllm-project/vllm/pull/35744)
+- [vllm-project/vllm](https://github.com/vllm-project/vllm): [#39568](https://github.com/vllm-project/vllm/pull/39568) [#28284](https://github.com/vllm-project/vllm/pull/28284) [#32306](https://github.com/vllm-project/vllm/pull/32306) [#35744](https://github.com/vllm-project/vllm/pull/35744)
 - [verl-project/verl](https://github.com/verl-project/verl): [#5185](https://github.com/verl-project/verl/pull/5185) [#5451](https://github.com/verl-project/verl/pull/5451) [#5452](https://github.com/verl-project/verl/pull/5452) [#5406](https://github.com/verl-project/verl/pull/5406) [#5219](https://github.com/verl-project/verl/pull/5219) [#5240](https://github.com/verl-project/verl/pull/5240) [#5283](https://github.com/verl-project/verl/pull/5283) [#4934](https://github.com/verl-project/verl/pull/4934) [#5895](https://github.com/verl-project/verl/pull/5895)
 
 <!--
